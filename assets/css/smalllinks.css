@@ -1,0 +1,58 @@
+/* smalllinks.css */
+
+/* Set the VT323 font for all text elements */
+body, h1, h2, p, a {
+  font-family: 'VT323', monospace;
+}
+
+/* Basic body styling */
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header styling */
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Navigation link styling */
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Content area styling */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1, h2 {
+  margin: 20px 0;
+}
+
+/* Link styling */
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}

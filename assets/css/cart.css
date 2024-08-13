@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  background-image: url('/assets/images/backgroundhome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'VT323', monospace;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#cart-total {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#checkout {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+  border-radius: 5px;
+}
+
+#checkout:hover {
+  background-color: grey;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-left a, .footer-right a {
+  text-decoration: none;
+  color: black;
+  font-family: 'VT323', monospace;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+  color: grey;
+}
+

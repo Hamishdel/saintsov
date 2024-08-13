@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - STS</title>
+    <link rel="stylesheet" href="../assets/css/smalllinks.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Perform form validation and send the form data via AJAX if needed
+            // This part of the code can be extended to use AJAX for form submission
+
+            // Redirect to the submitted page
+            window.location.href = "submitted.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="corporate-responsibility.html">Corporate Responsibility</a>
+            <a href="general.html">General</a>
+            <a href="contact.html">Contact</a>
+            <a href="language-selector.html">Language Selector</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or concerns, please don't hesitate to contact us. You can send us a message using the form below, and we'll get back to you as soon as possible.</p>
+
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <div>
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+            </div>
+            <div>
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject" required><br>
+            </div>
+            <div>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" maxlength="500" required></textarea><br>
+                <small>Max 500 characters.</small>
+            </div>
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">By clicking Submit, I agree to the <a href="terms.html">Terms of Use</a> and I have read the <a href="privacy.html">Privacy Policy</a>.</label><br>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
